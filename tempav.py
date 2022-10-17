@@ -8,4 +8,4 @@ for i in range(25):
     hum, temp = dht.read_retry(sensor, pin)
     temp_list.append(temp)
 
-print("average temperature over 25 readings = " + (sum(temp_list)/len(temp_list)))
+print("average temperature over 25 readings = " + str(sum(temp_list)/len(temp_list)))
