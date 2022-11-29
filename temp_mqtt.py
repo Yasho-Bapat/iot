@@ -82,6 +82,7 @@ try:
                 print("humidity: " + str(hum) + "; temperature: " + str(temp))
                 message = "humidity: " + str(hum) + "; temperature: " + str(temp)
                 pub("temp/dht", message)
+                time.sleep(2)
             except RuntimeError as error:
                 print(error.args[0])
                 message = error.args[0]
