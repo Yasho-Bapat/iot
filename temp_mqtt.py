@@ -21,11 +21,6 @@ def on_publish(client, userdata, mid, properties=None):
     print("congrats!!! msg published")
 
 
-# print which topic was subscribed to
-def on_subscribe(client, userdata, mid, granted_qos, properties=None):
-    print("Subscribed: " + str(mid) + " " + str(granted_qos))
-    print("successfully subbed")
-    print("waiting for messages............")
 
 
 # print message, useful for checking if it was successful
